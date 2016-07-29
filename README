@@ -1,0 +1,2 @@
+This script should parse the text out of any .pptx files.
+Text will be in order by slide #, but I make no guarantees about text within each slide.
