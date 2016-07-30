@@ -21,9 +21,12 @@ def extractZip(current_path):
 	fileList = os.listdir(current_path)
 	for element in fileList:
 		if(element.find(".pptx")!=-1):
-			zippedPpt = zipfile.ZipFile(current_path+"/"+element)
-			output_path = current_path +"/"+ element.replace(".pptx","")+"/"
-			zippedPpt.extractall(output_path)
+			try:
+				zippedPpt = zipfile.ZipFile(current_path+"/"+element)
+				output_path = current_path +"/"+ element.replace(".pptx","")+"/"
+				zippedPpt.extractall(output_path)
+			except:
+				print("Error processing zip file"+element)
 
 def processSlides(current_path):
 	fileList = os.listdir(current_path)
