@@ -1,2 +1,4 @@
-This script should parse the text out of any .pptx files.
+This script should parse the text out of any .pptx files contained within the same directory as the .py file.
+Output will be in a text file of the same name as the powerpoint.
+
 Text will be in order by slide #, but I make no guarantees about text within each slide.
